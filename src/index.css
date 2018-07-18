@@ -1,0 +1,85 @@
+body.be-body {
+	background-color: rgba(252,252,252,1);
+}
+
+/* nav styling */
+.main-content .navBrand {
+	font-size: 1.1rem;
+}
+
+.main-content .navBrand, .main-content .navbar-nav {
+	color: rgb(34,34,34);
+	text-transform: uppercase;
+}
+
+.navbar {
+	background-color: rgba(252,252,252,1);
+}
+
+.main-content .navbar.navbar-light .navbar-nav .nav-item .nav-link  {
+	color: rgba(34, 34, 34, .65);
+	font-size: .75rem;
+}
+
+.main-content .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover  {
+	color: rgba(34, 34, 34, 1);
+	font-size: .75rem;
+}
+
+/* books image size */
+
+.project-images .img-fluid {
+	width: 100%;
+}
+
+/* books buttons */
+
+.project-images button {
+  border: 1px solid rgba(34, 34, 34, .65) !important;
+  background-color: transparent !important;
+  color: rgba(34, 34, 34, .65) !important;
+}
+
+.project-images button:hover {
+  border: 1px solid rgba(34, 34, 34, 1) !important;
+  background-color: transparent !important;
+  color: rgba(34, 34, 34, 1) !important;
+}
+
+/* press icons */
+
+ .carousel-indicators .light-blue.darken-4 {
+  background-color: rgba(34, 34, 34, .25) !important;
+}
+
+.carousel-multi-item .controls-top .btn-floating {
+	background: rgba(34, 34, 34, .5) !important;
+}
+
+/* press section content alignment */
+
+.press-quotes .carousel {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* press section spacing */
+
+.carousel-multi-item {
+  margin-bottom: 90px;
+}
+
+.ril__outer {
+	background-color: rgba(0, 0, 0, 1) !important;
+}
+
+.ril__toolbarItem {
+  font-size: 13px !important;
+}
+
+
+/* headers */
+
+.project-images .font-weight-bold, .testimonial .font-weight-bold {
+	font-weight: 400 !important;
+}
