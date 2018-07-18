@@ -17,12 +17,17 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      loading: true,
       collapse: false,
       isWideEnough: false,
       dropdownOpen: false
     };
     this.onClick = this.onClick.bind(this);
     this.toggle = this.toggle.bind(this);
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ loading: false }), 1500); // simulates an async action, and hides the spinner
   }
 
   onClick(){
@@ -38,6 +43,13 @@ class App extends Component {
   }
 
   render() {
+
+    const { loading } = this.state;
+
+    if(loading) { // if your component doesn't have to wait for an async action, remove this block
+      return null; // render null when app is not ready
+    }
+
     return (
 
       <div className="main-content" id="home">
