@@ -8,7 +8,7 @@ class ProjectsPage extends Component {
 
         <section className="text-center my-5">
           <Row className="text-center project-images">
-            <Col lg="4" md="4" className="mb-lg-0 mb-4">
+            <Col lg="4" md="4" sm="4" className="mb-lg-0 mb-4">
               <View className="overlay rounded z-depth-1" waves>
                 <img src="img/EarthART_Cover.jpg" alt="book cover" className="img-fluid"/>
                 <a>
@@ -29,7 +29,7 @@ class ProjectsPage extends Component {
                 </a>
               </CardBody>
             </Col>
-            <Col lg="4" md="4" className="mb-lg-0 mb-4">
+            <Col lg="4" md="4" sm="4" className="mb-lg-0 mb-4">
               <View className="overlay rounded z-depth-1" waves>
                 <img src="img/Wasser_Cover.jpg" alt="book cover" className="img-fluid"/>
                 <a>
@@ -49,7 +49,7 @@ class ProjectsPage extends Component {
                 </a>
               </CardBody>
             </Col>
-            <Col lg="4" md="4" className="mb-lg-0 mb-4">
+            <Col lg="4" md="4" sm="4" className="mb-lg-0 mb-4">
               <View className="overlay rounded z-depth-1" waves>
                 <img src="img/EarthonFire_Cover.jpg" alt="book cover" className="img-fluid"/>
                 <a>

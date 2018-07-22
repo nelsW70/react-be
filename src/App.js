@@ -18,34 +18,31 @@ class App extends Component {
     super(props);
     this.state = {
       loading: true,
-      collapse: false,
+      collapsed: false,
       isWideEnough: false,
-      dropdownOpen: false
     };
-    this.onClick = this.onClick.bind(this);
-    this.toggle = this.toggle.bind(this);
+    this.handleTogglerClick = this.handleTogglerClick.bind(this);
+    this.handleNavbarClick = this.handleNavbarClick.bind(this);
   }
 
   componentDidMount() {
     setTimeout(() => this.setState({ loading: false }), 1500); // simulates an async action, and hides the spinner
   }
 
-  onClick(){
+  handleTogglerClick(){
     this.setState({
-    collapse: !this.state.collapse,
+    collapsed: !this.state.collapsed,
     });
   }
 
-  toggle() {
+  handleNavbarClick(){
     this.setState({
-    dropdownOpen: !this.state.dropdownOpen
+    collapsed: false
     });
   }
 
   render() {
-
     const { loading } = this.state;
-
     if(loading) { // if your component doesn't have to wait for an async action, remove this block
       return null; // render null when app is not ready
     }
@@ -55,22 +52,22 @@ class App extends Component {
       <div className="main-content" id="home">
         <Navbar light expand="md" fixed="top">
           <Scrollchor to="home" className="navBrand pr-3">Bernhard Edmaier</Scrollchor>
-          { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
-          <Collapse isOpen = { this.state.collapse } navbar>
+          { !this.state.isWideEnough && <NavbarToggler onClick={ this.handleTogglerClick } />}
+          <Collapse isOpen={ this.state.collapsed } navbar>
             <NavbarNav left>
-              <NavItem>
+              <NavItem onClick={this.handleNavbarClick}>
                 <Scrollchor to="gallery-one" animate={{offset: 0}} className="nav-link">Gallery One</Scrollchor>
               </NavItem>
-              <NavItem>
+              <NavItem onClick={this.handleNavbarClick}>
                 <Scrollchor to="books" animate={{offset: -20}} className="nav-link">Books</Scrollchor>
               </NavItem>
-              <NavItem>
+              <NavItem onClick={this.handleNavbarClick}>
                 <Scrollchor to="gallery-two" animate={{offset: -65}} className="nav-link">Gallery Two</Scrollchor>
               </NavItem>
-              <NavItem>
+              <NavItem onClick={this.handleNavbarClick}>
                 <Scrollchor to="press" animate={{offset: -65}} className="nav-link">Press</Scrollchor>
               </NavItem>
-              <NavItem>
+              <NavItem onClick={this.handleNavbarClick}>
                 <Scrollchor to="about" animate={{offset: -75}} className="nav-link">About</Scrollchor>
               </NavItem>
             </NavbarNav>

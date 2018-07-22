@@ -26,6 +26,7 @@ body.be-body {
 }
 
 /* nav styling */
+
 .main-content .navBrand {
 	font-size: 1.1rem;
 }
@@ -104,4 +105,30 @@ body.be-body {
 
 .project-images .font-weight-bold, .testimonial .font-weight-bold {
 	font-weight: 400 !important;
+}
+
+/* first carousel thumbnails */
+
+@media screen and (max-width: 767px) {
+    .carousel-thumbnails .carousel-indicators img {
+        max-width: 4.25rem !important;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .carousel-thumbnails .carousel-indicators img {
+        max-width: 3.25rem !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .carousel-thumbnails .carousel-indicators img {
+        max-width: 2.75rem !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .carousel-thumbnails .carousel-indicators img {
+        max-width: 2.25rem !important;
+    }
 }
