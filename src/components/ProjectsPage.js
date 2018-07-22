@@ -7,7 +7,7 @@ class ProjectsPage extends Component {
       <Container id="books" className="pt-1">
 
         <section className="text-center my-5">
-          <Row className="text-center project-images">
+          <Row className="text-center project-images project-text">
             <Col lg="4" md="4" sm="4" className="mb-lg-0 mb-4">
               <View className="overlay rounded z-depth-1" waves>
                 <img src="img/EarthART_Cover.jpg" alt="book cover" className="img-fluid"/>

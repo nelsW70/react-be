@@ -107,11 +107,16 @@ body.be-body {
 	font-weight: 400 !important;
 }
 
+/* books text padding */
 /* first carousel thumbnails */
 
 @media screen and (max-width: 767px) {
     .carousel-thumbnails .carousel-indicators img {
         max-width: 4.25rem !important;
+    }
+    .project-text .card-body {
+      padding-left: .25rem;
+      padding-right: .25rem;
     }
 }
 
