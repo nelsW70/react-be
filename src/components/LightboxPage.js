@@ -46,7 +46,7 @@ class LightboxPage extends React.Component  {
             {smallImages.map((image, index) => {
               return (<Col md="4" key={index}>
                 <figure>
-                  <img src={image} alt="Gallery" className="img-fluid" onClick={() => this.setState({ photoIndex: index, isOpen: true })} />
+                  <img src={image} alt="Gallery" className="img-fluid hoverable" onClick={() => this.setState({ photoIndex: index, isOpen: true })} />
                 </figure>
               </Col>)
             })}

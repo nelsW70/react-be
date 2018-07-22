@@ -70,12 +70,12 @@ class ThumbnailsCarouselPage extends Component {
           <CarouselControl direction="prev" role="button" onClick={() => { this.prev(); }} />
           <CarouselControl direction="next" role="button" onClick={() => { this.next(); }} />
           <CarouselIndicators>
-            <CarouselIndicator img="img/image11-crop.jpg" active={activeItem === 1 ? true : false} onClick={() => { this.goToIndex(1); }}></CarouselIndicator>
-            <CarouselIndicator img="img/image3-crop.jpg" active={activeItem === 2 ? true : false} onClick={() => { this.goToIndex(2); }}></CarouselIndicator>
-            <CarouselIndicator img="img/image9-crop.jpg" active={activeItem === 3 ? true : false} onClick={() => { this.goToIndex(3); }}></CarouselIndicator>
-            <CarouselIndicator img="img/image4-crop.jpg" active={activeItem === 4 ? true : false} onClick={() => { this.goToIndex(4); }}></CarouselIndicator>
-            <CarouselIndicator img="img/image10-crop.jpg" active={activeItem === 5 ? true : false} onClick={() => { this.goToIndex(5); }}></CarouselIndicator>
-            <CarouselIndicator img="img/image6-crop.jpg" active={activeItem === 6 ? true : false} onClick={() => { this.goToIndex(6); }}></CarouselIndicator>
+            <CarouselIndicator className="hoverable" img="img/image11-crop.jpg" active={activeItem === 1 ? true : false} onClick={() => { this.goToIndex(1); }}></CarouselIndicator>
+            <CarouselIndicator className="hoverable" img="img/image3-crop.jpg" active={activeItem === 2 ? true : false} onClick={() => { this.goToIndex(2); }}></CarouselIndicator>
+            <CarouselIndicator className="hoverable" img="img/image9-crop.jpg" active={activeItem === 3 ? true : false} onClick={() => { this.goToIndex(3); }}></CarouselIndicator>
+            <CarouselIndicator className="hoverable" img="img/image4-crop.jpg" active={activeItem === 4 ? true : false} onClick={() => { this.goToIndex(4); }}></CarouselIndicator>
+            <CarouselIndicator className="hoverable" img="img/image10-crop.jpg" active={activeItem === 5 ? true : false} onClick={() => { this.goToIndex(5); }}></CarouselIndicator>
+            <CarouselIndicator className="hoverable" img="img/image6-crop.jpg" active={activeItem === 6 ? true : false} onClick={() => { this.goToIndex(6); }}></CarouselIndicator>
           </CarouselIndicators>
         </Carousel>
       </Container>
